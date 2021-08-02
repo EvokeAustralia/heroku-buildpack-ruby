@@ -26,7 +26,7 @@ class DeployCheck
   def check!
     check_version!
     check_unstaged!
-    check_branch!
+    check_branch!('master')
     check_changelog!
     check_sync!
   end
